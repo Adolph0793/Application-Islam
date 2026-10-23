@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalam — Apprendre l'Arabe</title>
+    <meta name="description" content="Application immersive et interactive pour apprendre la langue arabe : alphabet, écriture, prononciation audio, vocabulaire thématique, grammaire, quiz et tuteur IA conversationnel." />
+    <meta property="og:title" content="Kalam — Apprendre l'Arabe" />
+    <meta property="og:description" content="Application immersive et interactive pour apprendre la langue arabe : alphabet, écriture, prononciation audio, vocabulaire thématique, grammaire, quiz et tuteur IA conversationnel." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Kalam" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      // Gracefully ignore HMR WebSocket disconnect messages in preview/iframe environment
+      window.addEventListener('error', function (event) {
+        if (event && event.message && (event.message.indexOf('WebSocket') !== -1 || event.message.indexOf('closed without opened') !== -1)) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      });
+      window.addEventListener('unhandledrejection', function (event) {
+        if (event && event.reason && String(event.reason).indexOf('WebSocket') !== -1) {
+          event.stopImmediatePropagation();
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased selection:bg-amber-500/30 selection:text-amber-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

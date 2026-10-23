@@ -1,0 +1,6 @@
+{
+  "name": "Kalam — Apprendre l'Arabe",
+  "description": "Application immersive et interactive pour apprendre la langue arabe : alphabet, écriture, prononciation audio, vocabulaire thématique, grammaire, quiz et tuteur IA conversationnel.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
